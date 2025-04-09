@@ -91,12 +91,15 @@ nav ul {
     column-gap: 10px;
     list-style: none;
     padding: 0;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
 nav ul li {
     
-    display: inline;
+    display: inline-block;
     margin: auto;
 }
 
@@ -416,3 +419,24 @@ footer {
     border-radius: 50px;
   }
 }
+  @media (max-width: 768px) {
+
+@media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+    }
+  
+    nav ul li a {
+      font-size: 1.2rem;
+      padding: 12px 20px;
+      border-radius: 100%;
+      display: inline-block;
+      width: 80%;
+      text-align: center;
+      row-gap: 10px;
+      column-gap: 15px;
+    }
+  }
