@@ -1,0 +1,390 @@
+/* Space-Themed Background */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #0f0f1d, #1a1a2e, #000);
+    color: #14e9e6;
+    text-align: center;
+    overflow-x: hidden;
+    position: static;
+}
+.about p {
+    text-align: justify;
+}
+
+/* Star Field Effect */
+.stars-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: transparent;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    animation: twinkle 3s infinite alternate ease-in-out;
+    opacity: 0;
+}
+
+@keyframes twinkle {
+    from { opacity: 0.2; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1.2); }
+}
+
+/* Shooting Stars */
+.shooting-star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+    animation: moveShootingStar 100s linear infinite;
+}
+
+@keyframes moveShootingStar {
+    from { transform: translateX(0) translateY(0); opacity: 2; }
+    to { transform: translateX(-200px) translateY(200px); opacity: 1; }
+}
+.header {
+    text-align: justify;
+
+}
+
+/* Header */
+header {
+    background: #0f0f1d;
+    padding: 20px;
+    position: relative;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 100%;
+    top: 0;
+    z-index: 500;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.purple {
+    color: #9b59b6;
+}
+
+nav ul {
+    padding: 40px ;
+    padding-top: 10px;
+    margin-inline-start: auto;
+    margin: 50px;
+    margin-right: 70px;
+    column-gap: 10px;
+    list-style: none;
+    padding: 0;
+    
+}
+
+nav ul li {
+    
+    display: inline;
+    margin: auto;
+}
+
+nav ul li a {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    padding-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(189, 57, 218, 0.6);
+    text-align: justify;
+    color: #a29bfe;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e90b0b;
+}
+
+/* Glowing Section Boxes */
+section {
+    padding: 40px ;
+    padding-top: 10px;
+    margin-top: 50px;
+    margin: 40px;
+    background: rgba(34, 32, 59, 0.9);
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(155, 89, 182, 0.6);
+    opacity: 1;
+    transform: translateY(90px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+#about {
+    background: rgba(30, 27, 56, 0.9);
+    padding: 50px;
+    padding-top: 10px;
+    border-radius: 100px;
+    box-shadow: 0 0 20px rgba(189, 57, 218, 0.6);
+    text-align: center;
+}
+#projects {
+    background: rgba(30, 27, 56, 0.9);
+    padding: 50px;
+    padding-top: 10px;
+    border-radius: 100px;
+    box-shadow: 0 0 20px rgba(189, 57, 218, 0.6);
+    text-align: center;
+}
+#projects p {
+    text-align: justify;
+}
+.project h3{
+    color: rgba(189, 57, 218, 0.6);
+    text-decoration: underline;
+    text-decoration-color: rgba(189, 57, 218, 0.6) ;
+}
+
+/* Updated Skills Section */
+#skills {
+    background: rgba(30, 27, 56, 0.9);
+    padding: 50px;
+    padding-top: 10px;
+    border-radius: 100px;
+    box-shadow: 0 0 20px rgba(189, 57, 218, 0.6);
+    text-align: center;
+    
+}
+  
+.skill-category {
+    padding: 40px;
+    padding-top: 20px;
+    border-radius: 80px;
+    margin: 60px auto;
+    max-width: 450px;
+    max-height: 450px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(155, 89, 182, 0.6);
+   
+}
+
+/* Skill Category Title */
+.skill-category h3 {
+    color:  rgba(155, 89, 182, 0.6);
+    font-size: 1.5rem;
+    margin: 10px;
+    
+}
+
+/* Number Pad Grid for Programming Skills */
+.number-pad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5%;
+    max-width: 200px;
+    text-align: center;
+    place-items: center;
+    margin: 10px auto;
+    justify-content: center;
+    
+}
+
+/* Skill Cards */
+.skill-card {
+    background: #2a2750;
+    padding: 15px;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: bold;
+    color:#09ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background 0.3s;
+}
+
+
+
+.skill-card:hover {
+    transform: scale(1.1);
+    background: #000000;
+    color: #ff0000;
+}
+
+/* Certifications Section */
+#certifications {
+    background: rgba(30, 27, 56, 0.9);
+    padding: 100px; /* ✨ CHANGED: Made padding responsive */
+    padding-top: 20px; /* ✨ CHANGED: Reduced top padding */
+    border-radius: 100px; /* ✨ CHANGED: More subtle roundness */
+    text-align: center;
+    box-shadow: 0 0 20px rgba(189, 57, 218, 0.6);
+   }
+
+.certifications-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* ✨ CHANGED: Slightly increased spacing */
+    padding: 10px 0;
+}
+
+.certifi {
+    background: rgba(42, 39, 80, 0.9);
+    padding: 15px 25px; /* ✨ CHANGED: Slightly smaller for cleaner layout */
+    border-radius: 40px; /* ✨ CHANGED: Matches new style */
+    font-size: 1rem; /* ✨ CHANGED: Made slightly smaller for responsiveness */
+    font-weight: 500; /* ✨ CHANGED: From normal to medium bold */
+    color: rgba(189, 57, 218, 0.9); /* ✨ CHANGED: Brighter for better visibility */
+    display: flex;
+    align-items: center;
+    text-align:left;
+    justify-content: center;
+    flex: 1 1 250px; /* ✨ ADDED: Flexibly responsive */
+    max-width: 300px; /* ✨ ADDED: Prevent card from stretching too much */
+    min-height: 60px; /* ✨ ADDED: Keep card height consistent */
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease; /* ✨ CLEANED: Smoother transitions */
+}
+
+.certifi:hover {
+    transform: scale(1.05);
+    background: #000000;
+    color: #fb0404;
+}
+.certifi .company {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    color: rgba(189, 57, 218, 0.9);
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+    text-align:center;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* ✨ Glow on hover */
+.certifi:hover .company {
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 30px #ff00ff;
+}
+
+
+
+/* Contact Section */
+#contact {
+    background: rgba(30, 27, 56, 0.9);
+    padding: 50px;
+    padding-top: 10px;
+    border-radius: 100px;
+    box-shadow: 0 0 20px rgba(189, 57, 218, 0.6);
+    text-emphasis: none;
+}
+
+#contact a {
+    color: #a29bfe;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    background: #0f0f1d;
+    border-radius: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    align-items: baseline;
+    color: #f81d1d;
+}
+
+
+.project {
+    position: relative;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
+}
+
+.project::before,
+.project::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    animation: float 4s ease-in-out infinite;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+/* Top-left corner sticker (planet) */
+.project::before {
+    top: 10px;
+    left: 10px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3212/3212608.png');
+}
+
+/* Bottom-right corner sticker (rocket) */
+.project::after {
+    bottom: -10px;
+    right: -10px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3212/3212634.png');
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+#ufo {
+    position:fixed;
+    top: 30%;
+    bottom: 30%;
+    left: -100px;
+    width: 8vw;
+    height: 80px;
+    background-image: url("imagess/ufo.png");
+    background-size: contain;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    pointer-events: center;
+    pointer-events: none;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#ufo.animate {
+    animation: flyAcross 1s linear forwards;
+    opacity: 1;
+}
+
+@keyframes flyAcross {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(120vw);
+    }
+}

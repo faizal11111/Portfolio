@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S H Mohamed Faizal | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><span class="purple">S H Mohamed Faizal</span></h1>
+            <p>IT Engineer | Web Developer | Data Analyst</p>
+            <nav>
+                <div class="contain">
+                <ul>
+                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                    <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+                    <li><a href="#certifications"><i class="fas fa-certificate"></i> Certifications</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+                </div>
+            </nav>
+            
+        </div>
+    </header>
+
+    <section id="about" class="fade-in">
+        <div class="about" >
+        <h2>About Me</h2>
+        <p>A final-year IT Engineering (B.Tech) student with a passion for innovation and a strong interest in
+            web development, software engineering & development, and data analysis. Experienced in working
+            on dynamic projects, including finance tracking and carpooling applications. Always eager to learn
+            and stay updated with industry trends</p>
+        </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+        <h2>Projects</h2>
+        <div class="project">
+            <a href="https://github.com/faizal11111/Finance-Tracker.git" target="_blank">
+                <h3>Finance Tracker</h3>
+            </a>
+                <p>Developed a full-stack web application for managing personal finances, enabling users
+                    to track income, expenses, budgets, and user authentication and security </p>
+        </div>
+        <div class="project">
+            <a href="https://github.com/faizal11111/Automatic-Face-Recognition-Attendance-System.git" target="_blank">
+                <h3>Face Recognition Attendance System</h3>
+            </a>
+            <p>Built an AI-powered system with OpenCV & TensorFlow 
+               Achieved 90%+ accuracy in real-time facial recognition.</p>
+        </div>
+        <div class="project">
+            <a href="https://github.com/faizal11111?tab=repositories" target="_blank">
+                <h3>Line Follower Robot</h3>
+            </a>
+            <p> Developed a robotic system using Arduino and infrared sensors to autonomously follow
+                predefined paths.</p>
+        </div>
+        <div class="project">
+            <a href="https://github.com/faizal11111/HexaRide-Share.git" target="_blank">
+                <h3>Hexarideshare Application </h3>
+            </a>
+            <p> Designed a carpooling application leveraging React, Node.js, and Google Maps API to
+                optimize ride-sharing and reduce costs.</p>
+        </div>
+        <div class="project">
+            <a href="https://github.com/faizal11111/RESGISTRATION-FROM.git" target="_blank">
+                <h3>Registration From</h3>
+            </a>
+                <p> Event registration system that allows participants to register for events by submitting their details. Participants can also upload a screenshot of their payment as part of the registration. Upon successful registration, participants will receive a confirmation email. </p>
+        </div>
+    </section>
+
+    <section id="skills" class="fade-in">
+       
+        <div id="ufo"></div>
+        <h2>Skills</h2>
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Programming</h3>
+                <div class="number-pad">
+                    <div class="skill-card">Python</div>
+                    <div class="skill-card">JavaScript</div>
+                    <div class="skill-card">HTML</div>
+                    <div class="skill-card">CSS</div>
+                </div>
+            </div> 
+            <div class="skill-category">
+                <h3><i class="fas fa-database"></i> Databases</h3>
+                <div class=" number-pad">
+                    <div class="skill-card">MySQL</div>
+                    <div class="skill-card">MongoDB</div>
+                    <div class="skill-card">SQLite</div>
+                    <div class="skill-card">PostgreSQL</div>
+                    <div class="skill-card">Oracle</div>
+                    <div class="skill-card">Firebase</div>
+                </div>
+            </div> 
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                <div class="number-pad">
+                    <div class="skill-card">Git</div>
+                    <div class="skill-card">Postman</div>
+                    <div class="skill-card">VS Code</div>
+                    <div class="skill-card">Figma</div>
+                    <div class="skill-card">Power BI</div>
+                    <div class="skill-card">Docker</div>
+                    <div class="skill-card">AWS</div>
+                    <div class="skill-card">Kubernetes</div>
+                    <div class="skill-card">Jenkins</div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                <div class=" number-pad">
+                    <div class="skill-card">Leadership</div>
+                    <div class="skill-card">Problem-Solving</div>
+                    <div class="skill-card">Team Collaboration</div>
+                    <div class="skill-card">Adaptability</div>
+                    <div class="skill-card">Time Management</div>
+                    <div class="skill-card">Analytical Thinking</div>
+                </div>
+            </div>
+        
+     </section>
+
+     <script>
+        const skillCards = document.querySelectorAll('.skill-card');
+        const ufo = document.getElementById('ufo');
+
+        skillCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                ufo.classList.remove('animate'); // Reset
+                void ufo.offsetWidth; // Force reflow
+                ufo.classList.add('animate');
+            });
+        });
+    </script>
+    
+
+    <section id="certifications" class="fade-in">
+        <h2>Certifications</h2>              
+        <div class ="certifications-container">
+            <div class="certifi"> Machine Learning with Python
+                <span class="company">IBM CognitiveClass.ai</span>
+            </div>
+            <div class="certifi">Full-Stack Development
+                <span class="company">Novi Tech R&D Pvt Ltd</span>
+            </div>
+            <div class="certifi">Power BI for (beginners)
+                <span class="company"> Simplilearn</span>
+            </div>
+            <div class="certifi">Web Programming with Python and JavaScript
+                <span class="company">Harvard University</span>
+            </div>
+            <div class="certifi">HTML Essential Training certification
+                <span class="company">LinkedIn Learning</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h2>Contact</h2>
+        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:mdfaiz75.mfgmail.com">mdfaiz75.mfgmail.com</a></p>
+        <p><i class="fas fa-phone"></i> Phone: +91 9342068032</p>
+        <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/mohamed-faizal-9a1042271/" target="_blank">Mohamed Faizal</a></p>
+    </section>
+    
+
+    <footer>
+        <p>© 2025 S H Mohamed Faizal | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.addEventListener("scroll", function () {
+            document.querySelectorAll(".fade-in").forEach(section => {
+                if (section.getBoundingClientRect().top < window.innerHeight - 50) {
+                    section.classList.add("visible");
+                }
+            });
+        });
+    </script>
+    <!-- Space Background Animation -->
+<div class="stars-container"></div>
+<script>
+    function createStars(numStars) {
+        const starContainer = document.querySelector('.stars-container');
+        for (let i = 0; i < numStars; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.left = `${Math.random() * 100}vw`;
+            star.style.top = `${Math.random() * 100}vh`;
+            star.style.animationDuration = `${Math.random() * 3 + 2}s`;
+            starContainer.appendChild(star);
+        }
+    }
+
+    function createShootingStars(numStars) {
+        const starContainer = document.querySelector('.stars-container');
+        for (let i = 0; i < numStars; i++) {
+            const shootingStar = document.createElement('div');
+            shootingStar.classList.add('shooting-star');
+            shootingStar.style.left = `${Math.random() * 100}vw`;
+            shootingStar.style.top = `${Math.random() * 100}vh`;
+            shootingStar.style.animationDuration = `${Math.random() * 3 + 2}s`;
+            starContainer.appendChild(shootingStar);
+        }
+    }
+
+    createStars(200); // Increased number of stars for a realistic effect
+    createShootingStars(8);
+</script>
+</body>
+</html>
